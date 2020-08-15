@@ -1,4 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+@import "assets/fonts/fonts.scss";
+@import "variables.scss";
+html,
+body {
+    font-family: "HelveticaNeue", Arial, sans-serif;
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.RemoveLink {
+    text-decoration: none;
+}
+
+.White {
+    color: $white;
+}
+
+a:hover {
+    color: $link;
+}
+
+.BorderSection {
+    border-top: 2px solid $white;
+    border-bottom: 2px solid $white;
+}
+
+.BG-White {
+    background-color: $white;
+}
+.BG-Black {
+    background-color: $primary;
+}
+
+.Personify {
+    font-family: "Personify", Arial, sans-serif;
+}
+
+.Locutor {
+    font-family: "Locutor", Arial, sans-serif;
+}
+
+.Header {
+    font-family: "HelveticaNeueSTD", Arial, sans-serif;
+}

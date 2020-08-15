@@ -1,0 +1,20 @@
+@import "../../../variables.scss";
+
+.Logo {
+    height: 25px;
+    object-fit: contain;
+}
+
+.NavbarColor {
+    background-color: $primary;
+}
+
+.BtnColor {
+    background-color: $primary;
+    padding: 0 10px;
+}
+
+.MenuIcon {
+    height: 26px;
+    object-fit: contain;
+}

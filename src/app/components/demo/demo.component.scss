@@ -1,0 +1,28 @@
+.Video{
+    width: 100%;
+    height: 500px;
+}
+
+.Absolute {
+    height: 0px;
+}
+
+.ImgClick {
+    width: 100px;
+    object-fit: contain;
+    position: absolute;
+    right: 10%;
+}
+
+@media (min-width: 768px) {
+    .PaddingDesktop {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    .ImgClick {
+        width: 60px;
+    }
+}

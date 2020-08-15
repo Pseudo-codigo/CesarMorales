@@ -1,1 +1,13 @@
-<p>navbar works!</p>
+<nav class="navbar navbar-expand-md NavbarColor NavbarBorder">
+    <div class="container-fluid px-4">
+        <a class="navbar-brand" href="#">
+            <img class="Logo" src="../../../assets/img/SVGs/logos/condensed.svg" alt="">
+        </a>
+
+        <app-menu [Sidebar]="false"></app-menu>
+
+        <button type="button" id="sidebarCollapse" (click)="Toggle()" class="btn BtnColor d-md-none">
+            <img class="MenuIcon" src="../../../assets/img/SVGs/icons/menu.svg" alt="">
+        </button>
+    </div>
+</nav>

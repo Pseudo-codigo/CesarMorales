@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import Rellax from "rellax";
 
 @Component({
   selector: 'app-container',
@@ -8,10 +9,11 @@ import { Component, OnInit } from '@angular/core';
 export class ContainerComponent implements OnInit {
 
   Active: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
-
+    var rellax = new Rellax('.rellax')
   }
   Remove = () => {
     this.Active = false;

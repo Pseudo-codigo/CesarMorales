@@ -1,0 +1,29 @@
+@import "../../../variables.scss";
+
+.Outline {
+    color: $primary;
+    text-shadow: -1px -1px 0 $white, 1px -1px 0 $white, -1px 1px 0 $white, 1px 1px 0 $white;
+}
+
+.DisplayTitle {
+    font-size: calc(2.047rem + 4.5vw);
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.Lineheight {
+    line-height: 3.3;
+}
+
+@media (min-width: 768px) and (max-width: 788px) {
+    .Copyright {
+        padding: 0 !important;
+    }
+}
+@media (max-width: 400px) {
+    .DisplayTitle {
+        font-size: calc(2.047rem + 4.5vw);
+        font-weight: 300;
+        line-height: 1.2;
+    }
+}
