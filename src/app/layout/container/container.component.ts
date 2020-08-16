@@ -10,7 +10,8 @@ export class ContainerComponent implements OnInit {
 
   Active: boolean = false;
 
-  constructor() { }
+  constructor(
+  ) { }
 
   ngOnInit(): void {
     var rellax = new Rellax('.rellax')

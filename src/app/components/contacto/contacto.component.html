@@ -1,0 +1,44 @@
+<div id="Contacto" class="row m-0 BorderSection BG-White">
+    <!-- <div id="Contacto" style="position: absolute; top: -100px; left: 0"></div> -->
+    <div class="col-12 px-4 BorderBottom">
+        <div class="display-1 Header py-4">CONTACTO</div>
+    </div>
+    <div class="col-12 px-4 BorderBottom">
+        <div class="col-6">
+            <div class="h4 m-0 Header py-3 py-md-2">LOREM IPSUM DOLOR SIT</div>
+        </div>
+    </div>
+    <div class="rellax Absolute pl-4" data-rellax-speed=".7">
+        <img src="../../../assets/img/SVGs/icons/load.svg" class="ImgTime" alt="">
+    </div>
+    <form [formGroup]="ContactForm" class="p-0" (ngSubmit)="SendMessage()">
+        <div class="col-12 px-4 BorderBottom">
+            <div class="h4 m-0 py-3 py-md-2">
+                <input type="text" class="w-100 Input" placeholder="NOMBRE" formControlName="Nombre">
+            </div>
+        </div>
+        <div class="col-12 px-4 BorderBottom">
+            <div class="h4 m-0 py-3 py-md-2">
+                <input type="text" class="w-100 Input" placeholder="EMAIL" formControlName="Correo">
+            </div>
+        </div>
+        <div class="col-12 px-4 BorderBottom">
+            <div class="h4 m-0 py-3 py-md-2">
+                <input type="text" class="w-100 Input" placeholder="MENSAJE" formControlName="Mensaje">
+            </div>
+        </div>
+        <div *ngIf="GetValidError()" class="col-12 px-4 BorderBottom">
+            <div class="h4 m-0 py-3 py-md-2 Error">
+                {{Error.toUpperCase()}}
+            </div>
+        </div>
+        <div class="col-12 px-4">
+            <div class="h4 m-0 py-3 py-md-2 text-center text-md-right">
+                <button class="btn btn-primary Btn Header" [disabled]="ContactForm.invalid" type="submit">
+                    ENVIAR MENSAJE
+                </button>
+            </div>
+        </div>
+    </form>
+
+</div>

@@ -18,10 +18,12 @@ export class ClientesComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     const mySwiper = new Swiper('.swiper-container', {
       loop: true,
-      freeMode: true,
       slidesPerView: 2,
+      freeMode: true,
+      spaceBetween: 0,
       autoplay: {
-        delay: 1000
+        delay: 1000,
+        disableOnInteraction: false,
       },
       breakpoints: {
         640: {
@@ -38,10 +40,6 @@ export class ClientesComponent implements OnInit, AfterViewInit {
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
       },
     });
   }

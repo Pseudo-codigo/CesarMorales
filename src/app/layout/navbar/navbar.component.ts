@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
+import { ScrollService } from '../../services/scroll/scroll.service'
 
 @Component({
   selector: 'app-navbar',
@@ -7,13 +8,19 @@ import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   @Output() ToggleEvent = new EventEmitter();
-  constructor() { }
+  constructor(
+    public Scroll: ScrollService
+  ) { }
 
   ngOnInit(): void {
   }
 
-  Toggle(){
+  Toggle() {
     this.ToggleEvent.emit();
+  }
+
+  ScrollToView() {
+    this.Scroll.ScrollToView('#content');
   }
 
 }

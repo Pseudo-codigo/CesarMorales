@@ -1,0 +1,48 @@
+@import "../../../variables.scss";
+
+.Absolute {
+    height: 0px;
+    z-index: 2;
+}
+
+.ImgTime {
+    width: 100px;
+    object-fit: contain;
+    transform: rotate(-15deg);
+    position: absolute;
+    right: 10%;
+}
+
+.BorderBottom {
+    border-bottom: 2px solid $primary;
+}
+
+.Input {
+    background-color: unset;
+    border: 0;
+    outline: none;
+}
+.Input::placeholder {
+    color: $primary;
+}
+
+.Error {
+    color:$secondary
+}
+
+.Btn {
+    background-color: unset;
+    color: $primary;
+    border: 2px solid $primary;
+    cursor: pointer;
+}
+
+.Btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.Btn:focus {
+    outline: unset;
+    box-shadow: 0 0 0 0.1rem $link;
+}

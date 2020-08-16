@@ -33,7 +33,7 @@ a:focus {
     top: 0;
     right: -250px;
     height: 100vh;
-    z-index: 999;
+    z-index: 1040;
     background: $primary;
     color: #fff;
     transition: all 0.3s;
@@ -62,8 +62,8 @@ a:focus {
 }
 
 #dismiss:hover {
-    background: #fff;
-    color: $secondary;
+    color: $white;
+    transform: rotate(90deg);
 }
 
 .overlay {
@@ -86,6 +86,11 @@ a:focus {
 #sidebar .sidebar-header {
     padding: 14px;
     background: $secondary;
+}
+
+.Close {
+    width: 18px;
+    height: 18px;
 }
 
 .LogoImg {

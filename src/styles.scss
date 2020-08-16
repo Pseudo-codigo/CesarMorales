@@ -3,12 +3,9 @@
 @import "variables.scss";
 html,
 body {
-    font-family: "HelveticaNeue", Arial, sans-serif;
+    font-family: HelveticaNeue, Arial, sans-serif;
     height: 100%;
-}
-body {
     margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 .RemoveLink {
@@ -35,6 +32,11 @@ a:hover {
     background-color: $primary;
 }
 
+.Pointer {
+    cursor: pointer;
+}
+
+//FONTS
 .Personify {
     font-family: "Personify", Arial, sans-serif;
 }

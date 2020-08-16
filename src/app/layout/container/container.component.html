@@ -2,7 +2,13 @@
     <!-- Sidebar  -->
     <nav id="sidebar" [ngClass]="{'active': Active}">
         <div id="dismiss" (click)="Remove()">
-            <i class="fas fa-arrow-left"></i>
+            <svg class="Close" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z" />
+                <path fill-rule="evenodd"
+                    d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z" />
+            </svg>
         </div>
 
         <div class="sidebar-header">
@@ -17,13 +23,15 @@
 
         <app-demo></app-demo>
         <app-clientes></app-clientes>
-
+        <app-servicios></app-servicios>
+        <app-video-container></app-video-container>
+        <app-contacto></app-contacto>
 
 
         <div class="Fill BG-Black"></div>
 
         <app-footer></app-footer>
-        <div class="rellax Absolute pl-4" data-rellax-speed="3" data-rellax-xs-speed="3" data-rellax-mobile-speed="3"
+        <div class="rellax Absolute pl-4" data-rellax-speed="4" data-rellax-xs-speed="4" data-rellax-mobile-speed="3"
             data-rellax-tablet-speed="2.2" data-rellax-desktop-speed="2.2">
             <img src="../../../assets/img/SVGs/icons/hand.svg" class="ImgHand" alt="">
         </div>

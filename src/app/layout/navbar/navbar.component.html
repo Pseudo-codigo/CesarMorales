@@ -1,8 +1,8 @@
-<nav class="navbar navbar-expand-md NavbarColor NavbarBorder">
+<nav class="navbar navbar-expand-md fixed-top NavbarColor NavbarBorder">
     <div class="container-fluid px-4">
-        <a class="navbar-brand" href="#">
+        <div class="navbar-brand Pointer" (click)="ScrollToView()" href="#content">
             <img class="Logo" src="../../../assets/img/SVGs/logos/condensed.svg" alt="">
-        </a>
+        </div>
 
         <app-menu [Sidebar]="false"></app-menu>
 

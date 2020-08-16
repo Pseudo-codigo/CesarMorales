@@ -28,7 +28,17 @@
     border: 0;
 }
 
-.ClientesTitle{
+.ContainerImage {
+    height: 20px;
+    z-index: 4;
+}
+
+.ClientesTitle {
     width: 50%;
     object-fit: contain;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: $white;
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { ScrollService } from 'src/app/services/scroll/scroll.service';
 
 @Component({
   selector: 'app-menu',
@@ -8,9 +9,15 @@ import { Component, OnInit, Input } from '@angular/core';
 export class MenuComponent implements OnInit {
 
   @Input("Sidebar") Sidebar: boolean = false;
-  constructor() { }
+  constructor(
+    public Scroll: ScrollService,
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  ScrollToView(element) {
+    this.Scroll.ScrollToView(element);
   }
 
 }
