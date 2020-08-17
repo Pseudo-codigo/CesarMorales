@@ -1,0 +1,41 @@
+@import "../../../variables.scss";
+.Title {
+    font-size: calc(2.047rem + 4.5vw);
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.BorderBottom {
+    border-bottom: 2px solid $white;
+}
+
+.BorderLeft {
+    border-left: 2px solid $white;
+}
+
+.BorderRight {
+    border-right: 2px solid $white;
+}
+
+.Outline {
+    color: black;
+    text-shadow: -1px -1px 0 #faf7e8, 1px -1px 0 #faf7e8, -1px 1px 0 #faf7e8, 1px 1px 0 #faf7e8;
+}
+
+.ImageContainer {
+    overflow: hidden;
+}
+
+.Image {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    max-height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .BorderRight {
+        border-right: none;
+    }
+}

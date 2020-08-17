@@ -1,3 +1,31 @@
-<div  class="row m-0 BorderSection BG-Black White" [id]="First?'Videos':''">
-    HOlis
+<div class="row m-0 BorderSection BG-Black White" [ngClass]="{'NoBorder' : Last}" [id]="First?'Videos':''">
+    <div [class]="getClasses(1)">
+        <div class="m-auto">
+            <a target="_blank" [href]="Link">
+                <img class="ImgVideo w-100" [src]="Image" alt="">
+            </a>
+        </div>
+    </div>
+    <div [class]="getClasses(2)">
+        <div class="col-12 Header pb-4">
+            <div class="h1 m-0">
+                {{Title}}
+            </div>
+        </div>
+        <div class="col-12 pb-0 pb-md-4">
+            <div class="">
+                {{Text}}
+            </div>
+        </div>
+        <div class="col-12 pb-4 d-none d-md-block">
+            <div class="h6 Header m-0">
+                {{Subtext}}
+            </div>
+        </div>
+        <div class="col-12 d-none d-md-block">
+            <a target="_blank" [href]="Link" class="btn Header Btn">
+                CLICK AQUÍ
+            </a>
+        </div>
+    </div>
 </div>

@@ -1,2 +1,5 @@
-<app-videos Left="true" First="true"></app-videos>
-<app-videos Right="true"></app-videos>
+<ng-container *ngFor="let video of Videos; let i = index">
+    <app-videos [First]="video.First" [Last]="video.Last" [Left]="video.Left" [Right]="video.Right" [Image]="video.Image"
+        [Link]="video.Link" [Title]="video.Title" [Text]="video.Text" [Subtext]="video.Subtext">
+    </app-videos>
+</ng-container>

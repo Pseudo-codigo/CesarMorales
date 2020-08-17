@@ -25,6 +25,11 @@ a:hover {
     border-bottom: 2px solid $white;
 }
 
+.BorderSectionBlack {
+    border-top: 2px solid $primary;
+    border-bottom: 2px solid $primary;
+}
+
 .BG-White {
     background-color: $white;
 }

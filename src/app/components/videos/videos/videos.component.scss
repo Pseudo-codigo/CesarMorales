@@ -1,0 +1,27 @@
+@import "../../../../variables.scss";
+.ImgVideo {
+    height: 100%;
+}
+
+.NoBorder {
+    border-bottom: none;
+}
+
+.BorderRight {
+    border-right: 2px solid $white;
+}
+
+.BorderLeft {
+    border-left: 2px solid $white;
+}
+
+.Btn {
+    background-color: unset;
+    color: $white;
+    border: 2px solid $white;
+    cursor: pointer;
+}
+.Btn:focus {
+    outline: unset;
+    box-shadow: 0 0 0 0.1rem $link;
+}
