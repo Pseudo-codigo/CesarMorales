@@ -1,6 +1,8 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 
-import Swiper from 'swiper';
+import Swiper, { Pagination, Navigation } from 'swiper';
+
+Swiper.use([Navigation, Pagination]);
 
 @Component({
   selector: 'app-clientes',
@@ -22,7 +24,7 @@ export class ClientesComponent implements OnInit, AfterViewInit {
       freeMode: true,
       spaceBetween: 0,
       autoplay: {
-        delay: 1000,
+        delay: 2000,
         disableOnInteraction: false,
       },
       breakpoints: {
@@ -40,6 +42,9 @@ export class ClientesComponent implements OnInit, AfterViewInit {
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
       },
     });
   }

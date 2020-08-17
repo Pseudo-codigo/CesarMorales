@@ -42,3 +42,7 @@
 .swiper-button-prev {
     color: $white;
 }
+
+::ng-deep .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: $white;
+}
