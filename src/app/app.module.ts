@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core'; 
+import { NgModule } from '@angular/core';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -14,6 +14,7 @@ import { DemoComponent } from './components/demo/demo.component';
 import { ClientesComponent } from './components/clientes/clientes.component';
 import { ServiciosComponent } from './components/servicios/servicios.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
+import { HttpClientModule } from '@angular/common/http';
 import { VideosComponent } from './components/videos/videos/videos.component';
 import { VideoContainerComponent } from './components/videos/video-container/video-container.component';
 
@@ -35,9 +36,11 @@ import { VideoContainerComponent } from './components/videos/video-container/vid
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
+    AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

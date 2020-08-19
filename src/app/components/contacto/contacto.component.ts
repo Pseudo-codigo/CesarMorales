@@ -99,8 +99,14 @@ export class ContactoComponent implements OnInit {
 
   SendMessage() {
     if (!this.emailService.sent) {
-      console.log(this.ContactForm.value)
-      this.emailService.sent = true;
+      this.emailService.PostEmail(this.ContactForm.value).subscribe(
+        (res) => {
+          this.emailService.sent = true;
+        },
+        (error) => {
+          console.error(error);
+        }
+      );
     }
     else {
       this.emailService.chill = true;
