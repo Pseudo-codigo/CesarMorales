@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
+import { EmailService } from "../../services/email/email.service";
 
 @Component({
   selector: 'app-contacto',
@@ -10,8 +11,15 @@ export class ContactoComponent implements OnInit {
 
   ContactForm: FormGroup;
   Error: string = '';
+  retractsAutomatically: boolean = false;
+  element;
+  sizeOfOne;
+  sizeOfExtra
+
+
   constructor(
     public formBuilder: FormBuilder,
+    public emailService: EmailService
   ) {
     this.ContactForm = this.formBuilder.group({
       Nombre: new FormControl('', Validators.compose([
@@ -27,13 +35,44 @@ export class ContactoComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
+
+    this.element = document.getElementById('Mensaje');
+    this.sizeOfOne = this.element.clientHeight;
+    this.element.rows = 2;
+    this.sizeOfExtra = this.element.clientHeight - this.sizeOfOne;
+    this.element.rows = 1;
+
+    //modern
+    if (this.element.addEventListener)
+      this.element.addEventListener('input', this.Resize, false);
+    //IE8
+    else {
+      this.element.attachEvent('onpropertychange', this.Resize)
+      this.retractsAutomatically = true;
+    }
+  }
+
+  Resize = () => {
+    var length = this.element.scrollHeight;
+
+    if (this.retractsAutomatically) {
+      if (this.element.clientHeight == length)
+        return;
+    }
+    else {
+      this.element.rows = 1;
+      length = this.element.scrollHeight;
+    }
+
+    this.element.rows = 1 + (length - this.sizeOfOne) / this.sizeOfExtra;
   }
 
   GetValidError(): boolean {
     let error = false;
     for (const [key, value] of Object.entries(this.ContactForm.controls)) {
-      
-      error = (value.invalid && (value.dirty || value.touched))
+
+      error = ((value.invalid && (value.dirty || value.touched)) && !this.emailService.sent)
 
       if (error && value.errors) {
         for (const [errorName, valor] of Object.entries(value.errors)) {
@@ -59,7 +98,13 @@ export class ContactoComponent implements OnInit {
   }
 
   SendMessage() {
-    console.log(this.ContactForm.value)
+    if (!this.emailService.sent) {
+      console.log(this.ContactForm.value)
+      this.emailService.sent = true;
+    }
+    else {
+      this.emailService.chill = true;
+    }
   }
 
 }

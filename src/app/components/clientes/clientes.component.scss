@@ -3,6 +3,7 @@
     width: 100%;
     height: 100%;
 }
+
 .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -45,4 +46,20 @@
 
 ::ng-deep .swiper-pagination .swiper-pagination-bullet-active {
     background-color: $white;
+}
+
+@media (min-width: 768px) {
+    .ClientesTitle {
+        width: 40%;
+    }
+}
+@media (min-width: 1000px) {
+    .ClientesTitle {
+        width: 30%;
+    }
+}
+@media (min-width: 1200px) {
+    .ClientesTitle {
+        width: 20%;
+    }
 }

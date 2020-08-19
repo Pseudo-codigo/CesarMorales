@@ -118,20 +118,3 @@ a:focus {
     font-family: "Personify", Arial, sans-serif;
 }
 
-.Absolute {
-    height: 0px;
-    z-index: 2;
-    padding-left: 5%;
-}
-
-.ImgHand {
-    width: 100px;
-    object-fit: contain;
-    transform: rotate(35deg);
-}
-
-@media (max-width: 768px) {
-    .Absolute {
-        transform: translateY(-500px);
-    }
-}

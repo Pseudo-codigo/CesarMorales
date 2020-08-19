@@ -26,6 +26,11 @@
     overflow: hidden;
 }
 
+.MaxWidth {
+    max-width: 450px;
+    margin: auto;
+}
+
 .Image {
     height: 100%;
     object-fit: cover;
@@ -37,5 +42,10 @@
 @media (max-width: 768px) {
     .BorderRight {
         border-right: none;
+    }
+}
+@media (min-width: 768px) {
+    .Number {
+        font-size: 100px;
     }
 }

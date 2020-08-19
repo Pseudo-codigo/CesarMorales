@@ -28,6 +28,14 @@
 
 .Error {
     color: $secondary;
+    font-size: small;
+    padding: 0 2px;
+}
+
+.Sent {
+    color: $success;
+    font-size: small;
+    padding: 0 2px;
 }
 
 .Btn {
@@ -45,6 +53,10 @@
 .Btn:focus {
     outline: unset;
     box-shadow: 0 0 0 0.1rem $link;
+}
+
+textarea {
+    overflow: hidden;
 }
 
 @media (max-width: 768px) {

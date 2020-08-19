@@ -15,6 +15,20 @@
     line-height: 3.3;
 }
 
+
+.ImgHand {
+    width: 100px;
+    object-fit: contain;
+    transform: rotate(35deg);
+}
+
+
+.Absolute {
+    height: 0px;
+    z-index: 2;
+    padding-left: 5%;
+}
+
 @media (min-width: 768px) and (max-width: 788px) {
     .Copyright {
         padding: 0 !important;
@@ -25,5 +39,12 @@
         font-size: calc(2.047rem + 4.5vw);
         font-weight: 300;
         line-height: 1.2;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .Absolute {
+        transform: translateY(-500px);
     }
 }

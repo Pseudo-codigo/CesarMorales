@@ -28,12 +28,12 @@ export class ClientesComponent implements OnInit, AfterViewInit {
         disableOnInteraction: false,
       },
       breakpoints: {
-        640: {
+        768: {
           slidesPerView: 3,
           spaceBetween: 0,
         },
         1024: {
-          slidesPerView: 4,
+          slidesPerView: 5,
           spaceBetween: 0,
         },
       },
