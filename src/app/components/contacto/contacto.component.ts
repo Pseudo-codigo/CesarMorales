@@ -98,7 +98,8 @@ export class ContactoComponent implements OnInit {
   }
 
   SendMessage() {
-    if (!this.emailService.sent) {
+    debugger;
+    if (!this.emailService.sent && this.ContactForm.valid) {
       this.emailService.PostEmail(this.ContactForm.value).subscribe(
         (res) => {
           this.emailService.sent = true;

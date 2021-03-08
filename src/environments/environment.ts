@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  API_URL: 'https://cesarmorales.azurewebsites.net/api/',
+  API_URL: 'https://localhost:44311/api/',
 };
 
 /*

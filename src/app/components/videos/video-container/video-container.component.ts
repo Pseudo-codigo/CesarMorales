@@ -11,18 +11,18 @@ export class VideoContainerComponent implements OnInit {
 
   Vids = [
     {
-      Title: 'VIDEOS RECIENTES 2018',
-      Text: 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPI- SCING ELIT, SED DIAM NONUMMY NIBH EUISMOD TINCID- UNT UT LAOREET DOLORE MAGNA ALIQUAM ERAT VOLUT- PAT. UT WISI',
-      Subtext: 'LOREM IPSUM DOLOR SIT AMET',
+      Title: 'TRABAJOS RECIENTES',
+      Text: 'LOS 10 MEJORES ANUNCIOS QUE SE HAN REALIZADO RECIENTEMENTE PARA RADIO Y TELEVISIÓN.',
+      Subtext: 'REEL 2020 - 2021',
       Link: 'https://google.com',
-      Image: '../../../../assets/img/SVGs/colors/purple.svg',
+      Image: '../../../../assets/img/images/mic.webp',
     },
     {
-      Title: 'VIDEOS RECIENTES 2019',
-      Text: 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPI- SCING ELIT, SED DIAM NONUMMY NIBH EUISMOD TINCID- UNT UT LAOREET DOLORE MAGNA ALIQUAM ERAT VOLUT- PAT. UT WISI',
-      Subtext: 'LOREM IPSUM DOLOR SIT AMET',
+      Title: 'ARCHIVO PUBLICITARIO',
+      Text: 'UNA BREVE SELECCIÓN DE LOS ANUNCIOS QUE HICIERON HISTORIA Y CAMBIARON LA INDUSTRIA PUBLICITARIA EN EL PAÍS.',
+      Subtext: 'REEL DE DÉCADAS',
       Link: 'https://google.com',
-      Image: '../../../../assets/img/SVGs/colors/green.svg',
+      Image: '../../../../assets/img/images/cassette.webp',
     },
   ]
 

@@ -20,7 +20,6 @@ export class EmailService {
 
 
   PostEmail(email: EmailModel): Observable<EmailModel> {
-   debugger;
     return this.http.post<EmailModel>(this.Url + `email`, email, { headers: this.headers });
   }
 }

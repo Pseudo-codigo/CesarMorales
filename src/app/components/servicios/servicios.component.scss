@@ -39,6 +39,14 @@
     width: 100%;
 }
 
+.ContainerServices {
+    flex-direction: column;
+}
+
+.ItemService {
+    flex: 1;
+}
+
 @media (max-width: 768px) {
     .BorderRight {
         border-right: none;
